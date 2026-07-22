@@ -1,4 +1,4 @@
-# Explainer: Built-in Embedding API
+# Explainer: Built-in Semantic Embedder API
 
 This proposal is an early design sketch by the Chrome Built-in AI team to
 describe the problem below and solicit feedback on the proposed solution. It has
@@ -10,11 +10,11 @@ not been approved to ship in Chrome.
 
 ## Participate
 
-- https://github.com/explainers-by-googlers/embedding-api/issues
+- https://github.com/explainers-by-googlers/semantic-embedder-api/issues
 
 ## Introduction
 
-The **Embedding API** is a proposed Web Platform API that allows developers to
+The **Semantic Embedder API** is a proposed Web Platform API that allows developers to
 generate high-dimensional vector representations (embeddings) of text content
 directly on the user's device. By leveraging an on-device model built into the
 browser, this API enables powerful semantic understanding features without the
@@ -69,7 +69,7 @@ cost and privacy risks of server-side AI, and the severe storage bloat of DIY
 client-side solutions where each site must download its own large model.
 
 We hope initial signals of developer demand will merit formal user research
-regarding demand for the same use cases supported by a semantic embedding API.
+regarding demand for the same use cases supported by a Semantic Embedder API.
 
 ## Use cases
 
