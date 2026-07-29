@@ -309,6 +309,14 @@ strictly an optional hint that browsers can safely ignore if their underlying
 model does not support it. During the Developer Trial, we will gather metrics to
 evaluate how effectively these task hints improve embedding quality in practice.
 
+The following task types are currently supported:
+
+- `"semantic-similarity"`: Used to generate embeddings that are optimized to assess text similarity. This is not intended for retrieval use cases.
+- `"retrieval-query"`: Used to generate embeddings that are optimized for document search or information retrieval. Use this when a user submits a search to generate an embedding for their query text in real time.
+- `"retrieval-document"`: Used to generate embeddings that are optimized for document search or information retrieval. Use this when generating embeddings for your entire collection of documents so they can be indexed in a vector database.
+- `"classification"`: Used to generate embeddings that are optimized to classify texts according to preset labels (e.g. sentiment analysis, spam detection).
+- `"clustering"`: Used to generate embeddings that are optimized to cluster texts based on their similarities (e.g. document organization, market research, anomaly detection).
+
 ## Considered alternatives
 
 ### WebAssembly/WebGPU (DIY)
